@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="page-wrap js-page-wrap">
+  <section class="swiper">
+    <div class="swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img src="img/slider.jpg" alt="" width="1920" height="780">
+        </li>
+        <li class="swiper-slide">
+          <img src="img/slider.jpg" alt="" width="1920" height="780">
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  
+  <section class="filter-page">
+    <form action="#" method="get" class="wrapper">
+      <p class="title">Оптимальный продукт для вашего автомобиля</p>
+      <div class="filter__form">
+        <fieldset class="filter__wrap">
+          <label for="brand" class="filter__label">Марка</label>
+          <div class="filter__field">
+            <select name="brand" id="brand" class="filter__select filter__select--brand">
+              <option value="1">Jaguar</option>
+              <option value="2">Другой</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="filter__wrap">
+          <label for="model" class="filter__label">Модель</label>
+          <div class="filter__field">
+            <select name="model" id="model" class="filter__select filter__select--model">
+              <option value="1">XJ</option>
+              <option value="2">Другой</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="filter__wrap filter__wrap--right">
+          <label for="year" class="filter__label">Год</label>
+          <div class="filter__field">
+            <select name="year" id="year" class="filter__select filter__select--year">
+              <option value="1">2015</option>
+              <option value="2">2014</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="filter__wrap">
+          <label for="date" class="filter__label">Дата покупки</label>
+          <div class="filter__field filter__field--full">
+            <input class="filter__date" name="date" id="date" type="text" placeholder="11/2016">
+          </div>
+        </fieldset>
+        <fieldset class="filter__wrap">
+          <input type="checkbox" name="check" id="check" class="filter__check" checked>
+          <label for="check" class="filter__label filter__label--check">У дилера</label>
+        </fieldset>
+        <fieldset class="filter__wrap filter__wrap--right">
+          <label for="diler" class="filter__label">Дилер</label>
+          <div class="filter__field">
+            <select name="diler" id="diler" class="filter__select filter__select--diler">
+              <option value="1">Авилон</option>
+              <option value="2">Другой</option>
+            </select>
+          </div>
+        </fieldset>
+      </div>
+      <button type="submit" class="system__btn filter__btn">Подобрать</button>
+    </form>
+  </section>
+  
+  <section class="system wrapper">
+    <p class="title">РЕКОМЕНДОВАННОЕ ОБОРУДОВАНИЕ</p>
+    <p class="subtitle">СПУТНИКОВАЯ ПРОТИВОУГОННАЯ СИСТЕМА</p>
+    <ul class="system__list">
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">CESAR</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">There</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">There</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+    </ul>
+    
+    <p class="subtitle">ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
+    <ul class="system__list">
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">CESAR</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">There</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">There</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+    </ul>
+    
+    <p class="subtitle">УСЛУГИ</p>
+    <ul class="system__list">
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">CESAR</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">There</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+      <li class="system__item">
+        <figure class="system__img">
+          <a href="#">
+            <img src="img/shinomontazh.jpg" alt="">
+          </a>
+        </figure>
+        <div class="system__info">
+          <p class="system__title">There</p>
+          <p class="system__price">16 900руб.</p>
+          <a href="#" class="system__btn">Подробнее</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  
+  <!-- Slider -->
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+  </script>
+  
+  <!-- Calender -->
+  <script>
+    $(function() {
+      $(".filter__date").datepicker();
+    });
+  </script>
+</body>
+</html>
