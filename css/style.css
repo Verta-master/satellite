@@ -125,6 +125,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
+  z-index: 5;
   bottom: -35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -135,6 +136,14 @@ img {
   border-radius: 50px;
   background-color: #005ca9;
   text-transform: uppercase;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.system__btn:hover,
+.system__btn:active {
+  font-size: 24px;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
 }
 .title {
   margin-top: 0;
@@ -468,6 +477,12 @@ img {
   width: 346px;
   height: 63px;
   font-size: 16px;
+}
+.card__order:hover,
+.card__order:active {
+  font-size: 18px;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
 }
 .card__price {
   margin: 0;
