@@ -385,6 +385,7 @@ img {
   width: 635px;
   min-height: 450px;
   padding: 40px 60px;
+  padding-bottom: 30px;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -445,6 +446,7 @@ img {
 }
 .card__btn--compare {
   width: 294px;
+  min-width: 294px;
   margin-right: 5px;
   padding-right: 20px;
   position: relative;
@@ -469,6 +471,7 @@ img {
 }
 .card__btn--download {
   width: 95px;
+  min-width: 95px;
   background-image: url(../img/download.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -717,6 +720,7 @@ img {
   }
   .card__btn--compare {
     width: 250px;
+    min-width: 250px;
     font-size: 15px;
     margin-right: 0;
   }
