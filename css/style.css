@@ -32,6 +32,9 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.wrapper--wide {
+  width: 1200px;
+}
 .system {
   padding-top: 155px;
 }
@@ -174,10 +177,18 @@ img {
   padding-bottom: 65px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), to(rgba(0, 0, 0, 0.05)));
   background-image: linear-gradient(to right, #fff 0%, #fff 50%, rgba(0, 0, 0, 0.05) 100%);
+}
+.filter-page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#fff));
+  background-image: linear-gradient(to bottom, #dedede, #fff);
 }
 .filter__form {
   padding-top: 20px;
@@ -328,7 +339,271 @@ img {
 .filter__check:checked + .filter__label--check::after {
   display: block;
 }
-@media (max-width: 1180px) {
+.card {
+  padding-bottom: 120px;
+  position: relative;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d5d4d4), to(#f8f7f7));
+  background-image: linear-gradient(to bottom, #d5d4d4, #f8f7f7);
+}
+.card__header,
+.card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.card__block {
+  width: 485px;
+  height: 450px;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.card__info {
+  width: 635px;
+  min-height: 450px;
+  padding: 40px 60px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.05)), color-stop(50%, #fff), to(rgba(0, 0, 0, 0.05)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0%, #fff 50%, rgba(0, 0, 0, 0.05) 100%);
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__btns {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__btn {
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #b2b3b3;
+  text-transform: uppercase;
+}
+.card__btn--compare {
+  width: 294px;
+  margin-right: 5px;
+  padding-right: 20px;
+  position: relative;
+}
+.card__btn--compare::before,
+.card__btn--compare::after {
+  content: "";
+  position: absolute;
+  right: 35px;
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.card__btn--compare::before {
+  top: 17px;
+  background-image: url(../img/arrow-up.png);
+}
+.card__btn--compare::after {
+  bottom: 17px;
+  background-image: url(../img/arrow-down.png);
+}
+.card__btn--download {
+  width: 95px;
+  background-image: url(../img/download.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card__order {
+  width: 346px;
+  height: 63px;
+  font-size: 16px;
+}
+.card__price {
+  margin: 0;
+  font-size: 17px;
+  color: #005aac;
+}
+.card__price span {
+  font-size: 38px;
+  line-height: 1.2;
+}
+.card__text {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #b2b3b3;
+}
+.card__text p {
+  font-size: 14px;
+  line-height: 1.1;
+}
+.card__list {
+  width: 100%;
+  padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.card__list li {
+  width: 50%;
+  margin-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 20px;
+  position: relative;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.card__list li::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  width: 16px;
+  height: 7px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.card__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.comparison {
+  padding-top: 45px;
+  padding-bottom: 75px;
+  position: relative;
+}
+.comparison::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#fff));
+  background-image: linear-gradient(to bottom, #dedede, #fff);
+}
+.comparison .subtitle {
+  font-size: 28px;
+  font-weight: 400;
+}
+.comparison + .system {
+  padding-top: 40px;
+}
+.comparison__table {
+  width: 100%;
+  margin-top: 45px;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 300;
+  border-collapse: collapse;
+}
+.comparison__table th {
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.comparison__table th,
+.comparison__table td {
+  width: 144px;
+  text-align: center;
+  vertical-align: middle;
+}
+.comparison__table .comparison__feature {
+  width: 440px;
+  text-align: left;
+}
+.comparison__table .comparison__blue {
+  color: #005aac;
+  font-weight: 400;
+}
+.comparison__table td {
+  height: 44px;
+}
+.comparison__table td span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #005aac;
+}
+.comparison__table td b {
+  font-weight: 400;
+  font-size: 12px;
+}
+.comparison__table th:nth-child(5),
+.comparison__table td:nth-child(5) {
+  background-color: #ebecec;
+}
+@media (max-width: 1200px) {
   .wrapper {
     width: 100%;
   }
@@ -352,6 +627,34 @@ img {
   }
   .system__img {
     height: 300px;
+  }
+  .card__block {
+    width: 420px;
+  }
+  .card__info {
+    width: 520px;
+    padding: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .comparison__block {
+    overflow-x: scroll;
+  }
+  .comparison__table {
+    width: 985px;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .card__block,
+  .card__info {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .card__block {
+    width: 520px;
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 700px) {
@@ -384,5 +687,48 @@ img {
   }
   .filter__label {
     margin-right: 10px;
+  }
+  .card__block {
+    height: 300px;
+  }
+  .card__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .card__btn {
+    height: 55px;
+  }
+  .card__btn--compare {
+    width: 250px;
+    font-size: 15px;
+    margin-right: 0;
+  }
+  .card__btn--compare::before {
+    top: 12px;
+    right: 20px;
+  }
+  .card__btn--compare::after {
+    bottom: 12px;
+    right: 20px;
+  }
+  .card__btn--download {
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .card__price span,
+  .card__title {
+    font-size: 24px;
+  }
+  .card__list li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card__order {
+    width: 250px;
+    height: 55px;
+    font-size: 15px;
   }
 }
