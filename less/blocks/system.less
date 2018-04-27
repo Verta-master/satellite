@@ -1,9 +1,5 @@
 .system {
   padding-top: 155px;
-  
-//  &--card {
-//    padding-top: 40px;
-//  }
 }
 
 .system__list {
@@ -77,6 +73,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 5;
   bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
@@ -86,4 +83,11 @@
   border-radius: 50px;
   background-color: #005ca9;
   text-transform: uppercase;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    font-size: 24px;
+    transition: ease-out 0.2s;
+  }
 }
