@@ -29,6 +29,8 @@ img {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .system {
   padding-top: 155px;
@@ -48,12 +50,12 @@ img {
           align-items: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  margin-bottom: 90px;
+  margin-bottom: 55px;
 }
 .system__item {
   width: 360px;
   margin-right: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 }
 .system__item:nth-child(3n) {
   margin-right: 0;
@@ -325,4 +327,62 @@ img {
 }
 .filter__check:checked + .filter__label--check::after {
   display: block;
+}
+@media (max-width: 1180px) {
+  .wrapper {
+    width: 100%;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .filter__wrap--right {
+    text-align: left;
+  }
+  .filter__wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .system__item:nth-child(3n) {
+    margin-right: auto;
+  }
+  .system__item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  .system__img {
+    height: 300px;
+  }
+}
+@media (max-width: 700px) {
+  .system__item {
+    width: 360px;
+  }
+  .system__img {
+    height: 360px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 26px;
+  }
+  .filter__date,
+  .filter__select,
+  .filter__label,
+  .subtitle {
+    font-size: 18px;
+  }
+  .filter__btn {
+    width: 250px;
+  }
+  .filter__wrap {
+    width: 280px;
+  }
+  .filter__select--diler,
+  .filter__select--brand {
+    width: 200px;
+  }
+  .filter__label {
+    margin-right: 10px;
+  }
 }
