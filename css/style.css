@@ -125,7 +125,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   bottom: -35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -749,5 +749,11 @@ img {
     width: 250px;
     height: 55px;
     font-size: 15px;
+  }
+  .card__order:hover,
+  .card__order:active {
+    font-size: 16px;
+    -webkit-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
   }
 }
